@@ -9,18 +9,17 @@ defaults:
 
 jobs:
   primeiro:
-    name: Primeiro
     runs-on: ubuntu-latest
     steps:
       - name: Mostrar rodando
-      - run: echo teste
+        run: echo teste
     
   segundo:
     name: Segundo
     runs-on: windows-latest
     steps:
       - name: Criando Variaveis de ambiente
-        env:
+      - env:
           VAR1: Isto é
           VAR2: GitHub Actions
         run: echo $VAR1 $VAR2
