@@ -19,7 +19,7 @@ jobs:
     runs-on: windows-latest
     steps:
       - name: Criando Variaveis de ambiente
-      - env:
+        env:
           VAR1: Isto é
           VAR2: GitHub Actions
         run: echo $VAR1 $VAR2
