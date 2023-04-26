@@ -12,6 +12,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Mostrar rodando
+        run: echo "$({github.event_name}) foi disparado"
+      - name: Mostrar rodando 2
         run: echo teste
     
   segundo:
