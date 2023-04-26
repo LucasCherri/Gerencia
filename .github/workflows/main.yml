@@ -31,7 +31,7 @@ jobs:
     steps:
       - name: Terceiro
         run: |
-          echo "{{ github.event_name }} foi disparado"
+          echo "${{ github.event_name }} foi disparado"
           echo " No ${{ runner.os }}"
     
 
